@@ -1,0 +1,218 @@
+public class ExamenGrafo{
+    public static void main(String[] args) {
+        int[][] matriz1 = new int [6][6];
+        int[][] matriz2 = new int [5][5];
+        int[][] matriz3 = new int [6][6];
+        int[][] matriz4 = new int [5][5];
+        int[][] matriz5 = new int [6][6];
+
+        matriz1[0][1] = 1;
+        matriz1[0][2] = 2;
+        matriz1[0][3] = 3;
+        matriz1[0][4] = 4;
+        matriz1[0][5] = 5;
+        matriz1[1][0] = 1;
+        matriz1[2][0] = 2;
+        matriz1[3][0] = 3;
+        matriz1[4][0] = 4;
+        matriz1[5][0] = 5;
+
+        matriz1[1][1] = 0;
+        matriz1[1][2] = 0;
+        matriz1[1][3] = 1;
+        matriz1[1][4] = 0;
+        matriz1[1][5] = 1;
+
+        matriz1[2][1] = 0;
+        matriz1[2][2] = 1;
+        matriz1[2][3] = 0;
+        matriz1[2][4] = 1;
+        matriz1[2][5] = 0;
+
+        matriz1[3][1] = 1;
+        matriz1[3][2] = 0;
+        matriz1[3][3] = 0;
+        matriz1[3][4] = 1;
+        matriz1[3][5] = 0;
+
+        matriz1[4][1] = 0;
+        matriz1[4][2] = 1;
+        matriz1[4][3] = 1;
+        matriz1[4][4] = 0;
+        matriz1[4][5] = 1;
+
+        matriz1[5][1] = 1;
+        matriz1[5][2] = 0;
+        matriz1[5][3] = 0;
+        matriz1[5][4] = 1;
+        matriz1[5][5] = 0;
+
+        //Grafo2
+
+        matriz2[0][1] = 1;
+        matriz2[0][2] = 2;
+        matriz2[0][3] = 3;
+        matriz2[0][4] = 4;
+        matriz2[1][0] = 1;
+        matriz2[2][0] = 2;
+        matriz2[3][0] = 3;
+        matriz2[4][0] = 4;
+
+        matriz2[1][1] = 0;
+        matriz2[1][2] = 1;
+        matriz2[1][3] = 1;
+        matriz2[1][4] = 0;
+
+        matriz2[2][1] = 1;
+        matriz2[2][2] = 0;
+        matriz2[2][3] = 1;
+        matriz2[2][4] = 1;
+
+        matriz2[3][1] = 1;
+        matriz2[3][2] = 1;
+        matriz2[3][3] = 0;
+        matriz2[3][4] = 1;
+
+        matriz2[4][1] = 0;
+        matriz2[4][2] = 1;
+        matriz2[4][3] = 1;
+        matriz2[4][4] = 0;
+
+        //Grafo3
+
+        matriz3[0][1] = 1;
+        matriz3[0][2] = 2;
+        matriz3[0][3] = 3;
+        matriz3[0][4] = 4;
+        matriz3[0][5] = 5;
+        matriz3[1][0] = 1;
+        matriz3[2][0] = 2;
+        matriz3[3][0] = 3;
+        matriz3[4][0] = 4;
+        matriz3[5][0] = 5;
+
+        matriz3[1][1] = 0;
+        matriz3[1][2] = 1;
+        matriz3[1][3] = 1;
+        matriz3[1][4] = 0;
+        matriz3[1][5] = 0;
+
+        matriz3[2][1] = 1;
+        matriz3[2][2] = 0;
+        matriz3[2][3] = 1;
+        matriz3[2][4] = 0;
+        matriz3[2][5] = 0;
+
+        matriz3[3][1] = 1;
+        matriz3[3][2] = 1;
+        matriz3[3][3] = 0;
+        matriz3[3][4] = 1;
+        matriz3[3][5] = 1;
+
+        matriz3[4][1] = 0;
+        matriz3[4][2] = 0;
+        matriz3[4][3] = 1;
+        matriz3[4][4] = 0;
+        matriz3[4][5] = 1;
+
+        matriz3[5][1] = 0;
+        matriz3[5][2] = 0;
+        matriz3[5][3] = 1;
+        matriz3[5][4] = 1;
+        matriz3[5][5] = 0;
+
+        //Grafo4
+
+        matriz4[0][1] = 1;
+        matriz4[0][2] = 2;
+        matriz4[0][3] = 3;
+        matriz4[0][4] = 4;
+        matriz4[1][0] = 1;
+        matriz4[2][0] = 2;
+        matriz4[3][0] = 3;
+        matriz4[4][0] = 4;
+
+        matriz4[1][1] = 0;
+        matriz4[1][2] = 1;
+        matriz4[1][3] = 1;
+        matriz4[1][4] = 1;
+
+        matriz4[2][1] = 1;
+        matriz4[2][2] = 0;
+        matriz4[2][3] = 1;
+        matriz4[2][4] = 1;
+
+        matriz4[3][1] = 1;
+        matriz4[3][2] = 1;
+        matriz4[3][3] = 0;
+        matriz4[3][4] = 0;
+
+        matriz4[4][1] = 1;
+        matriz4[4][2] = 1;
+        matriz4[4][3] = 0;
+        matriz4[4][4] = 0;
+
+        //Grafo5
+
+        matriz5[0][1] = 1;
+        matriz5[0][2] = 2;
+        matriz5[0][3] = 3;
+        matriz5[0][4] = 4;
+        matriz5[0][5] = 5;
+        matriz5[1][0] = 1;
+        matriz5[2][0] = 2;
+        matriz5[3][0] = 3;
+        matriz5[4][0] = 4;
+        matriz5[5][0] = 5;
+
+        matriz5[1][1] = 0;
+        matriz5[1][2] = 0;
+        matriz5[1][3] = 1;
+        matriz5[1][4] = 1;
+        matriz5[1][5] = 0;
+
+        matriz5[2][1] = 0;
+        matriz5[2][2] = 0;
+        matriz5[2][3] = 1;
+        matriz5[2][4] = 1;
+        matriz5[2][5] = 1;
+
+        matriz5[3][1] = 1;
+        matriz5[3][2] = 1;
+        matriz5[3][3] = 0;
+        matriz5[3][4] = 1;
+        matriz5[3][5] = 1;
+
+        matriz5[4][1] = 1;
+        matriz5[4][2] = 1;
+        matriz5[4][3] = 1;
+        matriz5[4][4] = 0;
+        matriz5[4][5] = 0;
+
+        matriz5[5][1] = 0;
+        matriz5[5][2] = 1;
+        matriz5[5][3] = 1;
+        matriz5[5][4] = 0;
+        matriz5[5][5] = 1;
+
+        System.out.println("\nMatriz 1:");
+        imprimirTabla(matriz1);
+        System.out.println("\nMatriz 2:");
+        imprimirTabla(matriz2);
+        System.out.println("\nMatriz 3:");
+        imprimirTabla(matriz3);
+        System.out.println("\nMatriz 4:");
+        imprimirTabla(matriz4);
+        System.out.println("\nMatriz 5:");
+        imprimirTabla(matriz5);
+    }
+
+    public static void imprimirTabla(int[][] tabla) {
+        for (int i = 0; i < tabla.length; i++) {
+            for (int j = 0; j < tabla[i].length; j++) {
+                System.out.print(tabla[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
